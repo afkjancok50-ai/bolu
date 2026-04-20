@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolu Delight | Pesan Online</title>
+    <title>Bolu Delight | Kelembutan Tiada Tara</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -25,54 +25,62 @@
             <div class="hidden md:flex space-x-8 font-medium text-gray-600">
                 <a href="#home" class="hover:text-orange-600 transition">Beranda</a>
                 <a href="#katalog" class="hover:text-orange-600 transition">Katalog</a>
-                <a href="#order" class="hover:text-orange-600 transition font-bold text-orange-700 underline">Pesan Sekarang</a>
+                <a href="#order" class="hover:text-orange-600 transition font-bold text-orange-700">Pesan Sekarang</a>
             </div>
-            <a href="#order" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition shadow-lg">Mulai Pesan</a>
+            <a href="#order" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition shadow-lg text-sm md:text-base">Mulai Pesan</a>
         </div>
     </nav>
 
     <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center text-white px-4">
         <div class="max-w-4xl">
             <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Kelembutan Tanpa Batas</h1>
-            <p class="text-lg md:text-2xl mb-10 opacity-90">Pilih bolu favoritmu dan kami antar langsung ke depan pintu rumah Anda.</p>
-            <a href="#order" class="bg-orange-600 px-10 py-4 rounded-full font-bold hover:bg-orange-700 transition">Pesan & Cek Ongkir</a>
+            <p class="text-lg md:text-2xl mb-10 opacity-90">Dibuat fresh setiap hari dari dapur Lohbener. Pilih bolu favoritmu dan kami antar langsung ke rumah.</p>
+            <a href="#katalog" class="bg-white text-orange-700 px-10 py-4 rounded-full font-bold hover:bg-orange-100 transition shadow-xl">Lihat Menu</a>
         </div>
     </section>
 
     <section id="katalog" class="min-h-screen py-20 bg-white flex items-center">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-gray-800">Daftar Harga</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
-                    <h3 class="font-bold text-xl">Bolu Keju</h3>
-                    <p class="text-orange-700 font-bold">Rp 45.000</p>
+        <div class="container mx-auto px-6 w-full">
+            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-gray-800">Menu Best Seller</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group overflow-hidden rounded-2xl shadow-lg bg-orange-50">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1000&auto=format&fit=crop" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-xl mb-2">Bolu Keju Gondrong</h3>
+                        <p class="text-orange-700 font-bold text-lg">Rp 45.000</p>
+                    </div>
                 </div>
-                <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
-                    <h3 class="font-bold text-xl">Chocolate Ganache</h3>
-                    <p class="text-orange-700 font-bold">Rp 50.000</p>
+                <div class="group overflow-hidden rounded-2xl shadow-lg bg-orange-50">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-xl mb-2">Chocolate Ganache</h3>
+                        <p class="text-orange-700 font-bold text-lg">Rp 50.000</p>
+                    </div>
                 </div>
-                <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
-                    <h3 class="font-bold text-xl">Pandan Suji</h3>
-                    <p class="text-orange-700 font-bold">Rp 40.000</p>
+                <div class="group overflow-hidden rounded-2xl shadow-lg bg-orange-50">
+                    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=1000&auto=format&fit=crop" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-xl mb-2">Pandan Suji Asli</h3>
+                        <p class="text-orange-700 font-bold text-lg">Rp 40.000</p>
+                    </div>
                 </div>
             </div>
-            <p class="text-center mt-10 text-gray-500 italic">*Silakan scroll ke bawah untuk melakukan pemesanan</p>
         </div>
     </section>
 
     <section id="order" class="min-h-screen py-20 bg-orange-100 flex items-center">
         <div class="container mx-auto px-6">
-            <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
-                <div class="bg-orange-700 p-6 text-white text-center">
+            <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-orange-200">
+                <div class="bg-orange-700 p-8 text-white text-center">
                     <h2 class="text-3xl font-serif font-bold">Formulir Pesanan</h2>
-                    <p class="text-orange-100 text-sm">Hitung otomatis total belanja + ongkir</p>
+                    <p class="text-orange-100 text-sm mt-2">Hitung biaya otomatis dengan fitur GPS</p>
                 </div>
                 
                 <form id="boluForm" class="p-8 space-y-6">
                     <div>
                         <label class="block text-gray-700 font-bold mb-2">Pilih Varian Bolu:</label>
-                        <select id="varian" class="w-full p-3 border rounded-lg bg-gray-50 focus:ring-2 focus:ring-orange-500 outline-none">
-                            <option value="0" data-nama="Belum Pilih">-- Pilih Bolu --</option>
+                        <select id="varian" class="w-full p-3 border-2 rounded-xl bg-gray-50 focus:border-orange-500 outline-none transition">
+                            <option value="0" data-nama="Belum Pilih">-- Pilih Menu --</option>
                             <option value="45000" data-nama="Bolu Keju Gondrong">Bolu Keju Gondrong (Rp 45.000)</option>
                             <option value="50000" data-nama="Chocolate Ganache">Chocolate Ganache (Rp 50.000)</option>
                             <option value="40000" data-nama="Pandan Suji Asli">Pandan Suji Asli (Rp 40.000)</option>
@@ -81,92 +89,127 @@
 
                     <div>
                         <label class="block text-gray-700 font-bold mb-2">Jumlah (Box):</label>
-                        <input type="number" id="jumlah" value="1" min="1" class="w-full p-3 border rounded-lg bg-gray-50 outline-none">
+                        <input type="number" id="jumlah" value="1" min="1" class="w-full p-3 border-2 rounded-xl bg-gray-50 outline-none">
                     </div>
 
                     <div>
-                        <label class="block text-gray-700 font-bold mb-2">Estimasi Jarak Pengiriman (Km):</label>
-                        <input type="number" id="jarak" placeholder="Contoh: 5" min="0" class="w-full p-3 border rounded-lg bg-gray-50 outline-none">
-                        <p class="text-xs text-orange-600 mt-1">*Biaya ongkir Rp 2.000 / Km (Bisa Anda ubah di script)</p>
+                        <label class="block text-gray-700 font-bold mb-2">Jarak Pengiriman (Km):</label>
+                        <div class="flex gap-2">
+                            <input type="number" id="jarak" placeholder="0" min="0" step="0.1" class="flex-1 p-3 border-2 rounded-xl bg-gray-50 outline-none">
+                            <button type="button" onclick="getGPSLocation()" class="bg-orange-600 text-white px-4 py-2 rounded-xl hover:bg-orange-700 transition font-bold text-sm">📍 GPS</button>
+                        </div>
+                        <p id="statusGPS" class="text-[11px] text-orange-600 mt-2 font-medium"></p>
                     </div>
 
-                    <div class="bg-orange-50 p-6 rounded-xl border-2 border-dashed border-orange-200">
-                        <div class="flex justify-between mb-2">
+                    <div class="bg-orange-50 p-6 rounded-2xl border-2 border-dashed border-orange-300 space-y-3">
+                        <div class="flex justify-between text-gray-600">
                             <span>Harga Bolu:</span>
-                            <span id="resHarga">Rp 0</span>
+                            <span id="resHarga" class="font-bold">Rp 0</span>
                         </div>
-                        <div class="flex justify-between mb-2">
-                            <span>Biaya Ongkir:</span>
-                            <span id="resOngkir">Rp 0</span>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Biaya Ongkir (Rp 2rb/km):</span>
+                            <span id="resOngkir" class="font-bold">Rp 0</span>
                         </div>
-                        <div class="flex justify-between font-bold text-xl text-orange-800 border-t pt-2 mt-2">
+                        <div class="flex justify-between font-bold text-2xl text-orange-800 border-t-2 border-orange-200 pt-3 mt-3">
                             <span>Total Bayar:</span>
                             <span id="resTotal">Rp 0</span>
                         </div>
                     </div>
 
-                    <button type="button" onclick="kirimWA()" class="w-full bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-700 transition shadow-lg flex items-center justify-center gap-2">
-                        Kirim Pesanan ke WhatsApp
+                    <button type="button" onclick="kirimWA()" class="w-full bg-green-600 text-white font-bold py-4 rounded-2xl hover:bg-green-700 transition shadow-lg flex items-center justify-center gap-3 text-lg">
+                        Pesan via WhatsApp
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="bg-orange-900 text-orange-100 py-10 text-center">
-        <p class="text-sm opacity-50">&copy; 2024 BoluDelight - Lohbener, Indramayu.</p>
+    <footer class="bg-orange-900 text-orange-100 py-12 text-center">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-serif font-bold mb-2">BoluDelight</h3>
+            <p class="text-sm opacity-60 mb-6">Lohbener, Indramayu, Jawa Barat</p>
+            <p class="text-xs opacity-40">&copy; 2026 BoluDelight. Built with ❤️ for the best taste.</p>
+        </div>
     </footer>
 
     <script>
-        const form = document.getElementById('boluForm');
-        
-        // FUNGSI UNTUK MENGUBAH BIAYA (Ubah angka 2000 di bawah sesuai keinginan Anda)
+        // --- PENGATURAN ---
         const BIAYA_PER_KM = 2000; 
+        // Ganti koordinat ini dengan lokasi tokomu di Lohbener (Ambil dari Google Maps)
+        const KOORDINAT_TOKO = { lat: -6.4172, lng: 108.2833 }; 
+
+        function getGPSLocation() {
+            const status = document.getElementById('statusGPS');
+            if (!navigator.geolocation) {
+                status.innerText = "Browser tidak mendukung GPS.";
+                return;
+            }
+            status.innerText = "⏳ Sedang mengambil lokasi...";
+
+            navigator.geolocation.getCurrentPosition((position) => {
+                const userLat = position.coords.latitude;
+                const userLng = position.coords.longitude;
+                
+                const jarak = calculateHaversine(KOORDINAT_TOKO.lat, KOORDINAT_TOKO.lng, userLat, userLng);
+                
+                document.getElementById('jarak').value = jarak.toFixed(1);
+                status.innerText = "✅ Lokasi berhasil ditentukan!";
+                hitungTotal();
+            }, () => {
+                status.innerText = "❌ Gagal akses lokasi. Masukkan jarak manual.";
+            });
+        }
+
+        function calculateHaversine(lat1, lon1, lat2, lon2) {
+            const R = 6371; 
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
 
         function hitungTotal() {
             const varian = document.getElementById('varian');
-            const hargaSatuan = parseInt(varian.value);
-            const namaBolu = varian.options[varian.selectedIndex].getAttribute('data-nama');
+            const harga = parseInt(varian.value) || 0;
             const jumlah = parseInt(document.getElementById('jumlah').value) || 0;
-            const jarak = parseInt(document.getElementById('jarak').value) || 0;
+            const jarak = parseFloat(document.getElementById('jarak').value) || 0;
 
-            const totalHargaBolu = hargaSatuan * jumlah;
-            const totalOngkir = jarak * BIAYA_PER_KM;
-            const totalBayar = totalHargaBolu + totalOngkir;
+            const totalBolu = harga * jumlah;
+            const totalOngkir = Math.ceil(jarak * BIAYA_PER_KM);
+            const totalBayar = totalBolu + totalOngkir;
 
-            // Update Tampilan
-            document.getElementById('resHarga').innerText = "Rp " + totalHargaBolu.toLocaleString('id-ID');
+            document.getElementById('resHarga').innerText = "Rp " + totalBolu.toLocaleString('id-ID');
             document.getElementById('resOngkir').innerText = "Rp " + totalOngkir.toLocaleString('id-ID');
             document.getElementById('resTotal').innerText = "Rp " + totalBayar.toLocaleString('id-ID');
 
-            return { namaBolu, jumlah, jarak, totalHargaBolu, totalOngkir, totalBayar };
+            return { 
+                nama: varian.options[varian.selectedIndex].getAttribute('data-nama'),
+                jumlah, jarak, totalBolu, totalOngkir, totalBayar 
+            };
         }
 
-        // Jalankan fungsi setiap kali ada input yang berubah
+        // Jalankan update saat input berubah
         document.getElementById('varian').addEventListener('change', hitungTotal);
         document.getElementById('jumlah').addEventListener('input', hitungTotal);
         document.getElementById('jarak').addEventListener('input', hitungTotal);
 
         function kirimWA() {
             const data = hitungTotal();
-            
-            if (data.totalHargaBolu === 0) {
-                alert("Silakan pilih varian bolu terlebih dahulu!");
-                return;
-            }
+            if (data.totalBolu === 0) { alert("Pilih varian bolu dulu!"); return; }
 
             const noWA = "6287828907820";
-            const pesan = `Halo BoluDelight, saya ingin memesan:%0A%0A` +
-                          `🍰 *Pesanan:* ${data.namaBolu}%0A` +
-                          `📦 *Jumlah:* ${data.jumlah} Box%0A` +
-                          `📍 *Jarak:* ${data.jarak} Km%0A` +
-                          `----------------------------%0A` +
-                          `💰 *Harga Bolu:* Rp ${data.totalHargaBolu.toLocaleString('id-ID')}%0A` +
-                          `🚚 *Ongkir:* Rp ${data.totalOngkir.toLocaleString('id-ID')}%0A` +
-                          `✅ *TOTAL BAYAR:* Rp ${data.totalBayar.toLocaleString('id-ID')}%0A%0A` +
-                          `Mohon diproses ya, terima kasih!`;
-
-            window.open(`https://wa.me/${noWA}?text=${pesan}`, '_blank');
+            const teks = `Halo BoluDelight!%0A%0A` +
+                         `Saya ingin memesan bolu:%0A` +
+                         `🍰 *Varian:* ${data.nama}%0A` +
+                         `📦 *Jumlah:* ${data.jumlah} Box%0A` +
+                         `📍 *Estimasi Jarak:* ${data.jarak} Km%0A` +
+                         `----------------------------%0A` +
+                         `💰 *Total Bayar:* Rp ${data.totalBayar.toLocaleString('id-ID')}%0A%0A` +
+                         `Mohon diproses ya!`;
+            
+            window.open(`https://wa.me/${noWA}?text=${teks}`, '_blank');
         }
     </script>
 </body>
