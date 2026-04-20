@@ -131,7 +131,7 @@
                                 <span id="resHarga" class="font-bold text-gray-800">Rp 0</span>
                             </div>
                             <div class="flex justify-between text-sm">
-                                <span class="text-gray-500">Biaya Ongkir (Rp 500/Km):</span>
+                                <span class="text-gray-500">Biaya Ongkir:</span>
                                 <span id="resOngkir" class="font-bold text-gray-800">Rp 0</span>
                             </div>
                             <div class="h-px bg-orange-100 my-2"></div>
@@ -186,11 +186,9 @@
             { id: 3, nama: "Pandan Suji Asli", harga: 40000, gambar: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800" }
         ];
 
-        // Ongkir diubah menjadi 500 per KM
         const BIAYA_PER_KM = 500;
         const KOORDINAT_TOKO = { lat: -6.4172, lng: 108.2833 };
 
-        // Set minimal tanggal hari ini
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('tgl_kirim').setAttribute('min', today);
         document.getElementById('tgl_kirim').value = today;
